@@ -14,7 +14,7 @@ ul {
 
 body {
   height: 100vh;
-  background: radial-gradient(circle, rgb(255, 255, 255) 70%, rgb(243, 243, 243) 100%);
+  background: #fafbfc;
   position: relative;
   display: flex;
   justify-content: center;
