@@ -1,9 +1,13 @@
-const trigger = document.querySelector('.trigger');
-trigger.addEventListener('click', (event) => {
-  event.currentTarget.classList.toggle('active');
-});
+// Variables
 
-const triggerTwo = document.querySelector('.triggerTwo');
-triggerTwo.addEventListener('click', (event) => {
+const trigger = document.querySelector('.trigger');
+
+// Functions
+
+const iconToggle = (event) => {
   event.currentTarget.classList.toggle('active');
-});
+};
+
+// Event Listeners
+
+trigger.addEventListener('click', iconToggle);
