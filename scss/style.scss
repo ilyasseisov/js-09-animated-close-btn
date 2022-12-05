@@ -1,5 +1,7 @@
 @import 'framework';
 
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
+
 body {
   height: 100vh;
   background: $body-gradient;
@@ -11,19 +13,17 @@ body {
   color: $color-grey-5;
 }
 
-.center-block {
+.button {
   width: 160px;
   height: 160px;
-  background: white;
   border-radius: 100%;
-  box-shadow: $shadow-grey-soft;
   cursor: pointer;
   position: relative;
   background: $color-purple;
   box-shadow: $shadow-purple;
 
   .trigger {
-    width: 97px;
+    width: 96px;
     height: 60px;
     position: absolute;
     top: 50%;
@@ -145,5 +145,25 @@ body {
   }
   100% {
     background-color: rgba($color: white, $alpha: 1);
+  }
+}
+
+.jssecrets {
+  font-weight: 500;
+  text-decoration: none !important;
+  font-family: 'Urbanist';
+  padding: 16px;
+  background: #ffc805;
+  color: #000000;
+  font-size: 1.2em;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px #b8900030, 0px 8px 24px #b8900060;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-4px);
   }
 }
